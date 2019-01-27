@@ -6,16 +6,16 @@
 ## 设计
 
 ![](https://upload-images.jianshu.io/upload_images/7762147-714733d0d16e5da7.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-SqlProcessor是一个数据库操作接口，包含增删改查操作。
-wrapper是装饰类，装饰真正的数据库操作模块。
-SqlProcessorFactory是工厂类，获取包装后的sql处理模块。
+SqlProcessor是一个数据库操作接口，包含增删改查操作。</br>
+wrapper是装饰类，装饰真正的数据库操作模块。</br>
+SqlProcessorFactory是工厂类，获取包装后的sql处理模块。</br>
 ## 实现
 
-MySqlProcessor： 具体的mysql操作类。
-SqlAssembleWarpper： sql组装类。
-LogSqlWarpper： 将sql语句保存到logger。
-ReplaceResultSqlWrapper：替换返回的Json结果key中的下划线。举个例子：数据库是user_name，替换为userName.
-SqlProcessorFactory：sql处理器创建工厂。
+MySqlProcessor： 具体的mysql操作类。</br>
+SqlAssembleWarpper： sql组装类。</br>
+LogSqlWarpper： 将sql语句保存到logger。</br>
+ReplaceResultSqlWrapper：替换返回的Json结果key中的下划线。举个例子：数据库是user_name，替换为userName。</br>
+SqlProcessorFactory：sql处理器创建工厂。</br>
 
 ### MySqlProcessor
 利用连接池操作mysql操作：
